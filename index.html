@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Vitrina Local</title>
+  <meta charset="UTF-8">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-    <h2>Vitrina Local</h2>
-    <h5>Lorem Ipsum</h5>
-</header>
 <body>
-    <section class="container">
-        <div class="poductos">
-            <div class="card"><img src="" alt=""></div>
-            <div class="card"><img src="" alt=""></div>
-            <div class="card"><img src="" alt=""></div>
-            <div class="card"><img src="" alt=""></div>
-            <div class="card"><img src="" alt=""></div>
-            <div class="card"><img src="" alt=""></div>
-            <div class="card"><img src="" alt=""></div>
-            <div class="card"><img src="" alt=""></div>
-            <div class="formulario">
-                <form action="">
-                    <input type="text" name="nombre" id="nombre">
-                    <input type="text" name="precio" id="precio">
-                    <input type="text" name="categoria" id="categoria">
-                    <input type="image" src="" alt="">
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </div>
-    </section>
+  <section class="container">
+    <h2>Agregar Producto</h2>
+    <!-- Formulario para capturar los datos del nuevo producto -->
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+        <input type="text" id="categoria" placeholder="Categoría" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <input type="url" id="imagen" placeholder="URL de la imagen" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Productos Agregados</h2>
+    <!-- Aquí se mostrarán las tarjetas de los productos -->
+    <div class="grid" id="contenedorProductos"></div>
+    <script src="js/main.js"></script>
+  </section>
 </body>
 </html>
