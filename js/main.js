@@ -6,7 +6,7 @@
     let productos = JSON.parse(localStorage.getItem('productos')) || [];
 
     /**
-     * 🔁 Función que recorre la lista de productos y los muestra como tarjetas en el HTML
+     * Función que recorre la lista de productos y los muestra como tarjetas en el HTML
      */
     const renderizarProductos = () => {
       // Vaciamos el contenedor para evitar duplicados
@@ -21,14 +21,14 @@
             <img src="${imagen}" alt="Imagen de ${nombre}">
             <h3>${nombre}</h3>
             <p>Categoría: ${categoria}</p>
-            <p>Precio: $${parseFloat(precio).toFixed(2)}</p>
+            <p>Precio: $${parseFloat(precio)}</p>
           </div>
         `;
       });
     };
 
     /**
-     * 🎯 Evento que se activa cuando el usuario envía el formulario
+     * Evento que se activa cuando el usuario envía el formulario
      * Captura los datos, los guarda y vuelve a renderizar la lista
      * Usar https://picsum.dev para imagenes.
      */
@@ -62,5 +62,5 @@
       formulario.reset();
     });
 
-    // 📦 Al cargar la página, mostramos los productos que ya estaban guardados
+    // Al cargar la página, mostramos los productos que ya estaban guardados
     renderizarProductos();
