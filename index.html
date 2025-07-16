@@ -6,20 +6,24 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <section class="container">
-    <h2>Agregar Producto</h2>
-    <!-- Formulario para capturar los datos del nuevo producto -->
-    <form id="formulario">
-        <input type="text" id="nombre" placeholder="Nombre del producto" required>
-        <input type="text" id="categoria" placeholder="Categoría" required>
-        <input type="number" id="precio" placeholder="Precio" required>
-        <input type="url" id="imagen" placeholder="URL de la imagen" required>
-        <button type="submit">Agregar</button>
-    </form>
+  <section class="megacontainer">
+    <div class="contenedor1">
+        <h2>Productos Agregados</h2>
+        <!-- Aquí se mostrarán las tarjetas de los productos -->
+        <div class="grid" id="contenedorProductos"></div>
+    </div>
+    <div class="contenedor2">
+        <h2>Agregar Producto</h2>
+        <!-- Formulario para capturar los datos del nuevo producto -->
+        <form id="formulario">
+            <input type="text" id="nombre" placeholder="Nombre del producto" required>
+            <input type="text" id="categoria" placeholder="Categoría" required>
+            <input type="number" id="precio" placeholder="Precio" required>
+            <input type="url" id="imagen" placeholder="URL de la imagen" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
 
-    <h2>Productos Agregados</h2>
-    <!-- Aquí se mostrarán las tarjetas de los productos -->
-    <div class="grid" id="contenedorProductos"></div>
     <script src="js/main.js"></script>
   </section>
 </body>
